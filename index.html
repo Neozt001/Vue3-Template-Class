@@ -18,7 +18,8 @@
 
       <ul>
         <li v-for="post in postsList" :key="post.id">
-          id: {{ post.id }} - title: {{ post.title }} - userId: {{ post.userId }}
+          <!-- id: {{ post.id }} - title: {{ post.title }} - userId: {{ post.userId }} -->
+          navn: {{ post.navn }} - handelsPris: {{ post.handelsPris }}
         </li>
       </ul>
       <button v-on:click="getAllPosts">Get All Posts</button>
