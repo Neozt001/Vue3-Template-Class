@@ -11,7 +11,8 @@ const app = Vue.createApp({
         },
         getAllPosts() {
             // console.log('get')
-            axios.get('https://jsonplaceholder.typicode.com/posts')
+            // axios.get('https://jsonplaceholder.typicode.com/posts')
+            axios.get('http://localhost:5105/api/Aktiehandel')
                 .then(response => {
                     console.log(this.postsList)
                     this.postsList = response.data
